@@ -74,8 +74,13 @@ function temperatureCtoF(temp) {
  *
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp, unit) {
+  if (unit === 'F') {
+	return `${temp}F`;
+  }
+  else if (unit === 'C') {
+	return `${temperatureCtoF(temp)}F`;
+  }
 }
 
 
